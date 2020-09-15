@@ -17,9 +17,8 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/welcome.jpg");
-  background: cover;
-  background: center; }
+  background: url("/img/welcome.jpg") transparent center/cover no-repeat scroll;
+  height: 50vh; }
   .header h1 {
     font-size: 400%;
     padding-bottom: 5px;
@@ -74,24 +73,25 @@ nav {
 
 .characters {
   flex-direction: column;
-  background-image: url("/img/rey-standing.jpg");
-  background: cover; }
+  background: transparent url("/img/rey-standing.jpg") center/cover no-repeat scroll;
+  height: 100vh;
+  display: flex; }
 
 .charactertitle {
   text-align: center;
   padding: 40px; }
 
 .characterpics img .luke, .characterpics .bb8 {
-  flex-shrink: 3; }
+  flex-grow: 0; }
 
 .characterpics img .leia, .characterpics .poe {
-  flex-grow: 2; }
-
-.characterpics img .finn, .characterpics .kylo {
   flex-grow: 1; }
 
+.characterpics img .finn, .characterpics .kylo {
+  flex-grow: 2; }
+
 .characterpics img .rey {
-  flex-grow: 0; }
+  flex-grow: 3; }
 
 .cast {
   background-color: lightgray; }
