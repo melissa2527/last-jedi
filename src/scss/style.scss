@@ -23,8 +23,8 @@ nav {
     justify-content: center;
     align-items: center;
     background-image: url('/img/welcome.jpg');
-    width: 100%;
-    height: 50vh;
+    background: cover;
+    background: center;
 
     h1 {
        font-size: 400%; 
@@ -80,12 +80,127 @@ nav {
 
 
 
-.characters > 
+.characters > .characterpics {
+    width: 800px;
+    margin: 0 auto;
+}
 .characters img {
     border-radius: 50%;
+    width: 70px;
 }
 .characters {
-    display: flex;
-
+    flex-direction: column;
     background-image: url('/img/rey-standing.jpg');
+    background: cover;
 }
+.charactertitle {
+    text-align: center;
+    padding: 40px;
+}
+.characterpics {
+
+    img .luke, .bb8 {
+        flex-shrink: 3;
+    }
+    img .leia, .poe {
+        flex-grow:2;
+    }
+    img .finn, .kylo {
+        flex-grow: 1;
+    }
+    img .rey {
+        flex-grow: 0;
+    }
+}
+
+
+.cast {
+    background-color: lightgray;
+
+    h2 {
+        padding: 50px;
+        text-align: center;
+        font-size: 150%;
+    }
+}
+
+.cast > .markhamill, .actors {
+    width: 800px;
+    margin: 0 auto;
+}
+.markhamill {
+    display: flex;
+    flex-direction: row;
+}
+.markhamillpic {
+    height: 65%;
+    width: 65%;
+}
+
+.markhamillinfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+    h4 {
+        font-size: 130%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    p {
+        line-height: 1.3;
+        font-size: 130%;
+        padding-bottom: 50px;
+    }
+}
+
+
+.actors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+        height: 90%;
+        width: 90%;
+    }
+}
+// .box {
+//     position: relative;
+//     display: inline-block;
+//     }
+//     .text {
+//         position: absolute;
+//         background-color: black;
+//         opacity: 0.5;
+//         color: white;
+//         margin:0 auto;
+//         left: 0;
+//         right: 0;
+//         bottom: 0;
+//         text-align: center;
+//     }
+// }
+
+// //.container {
+//     position: relative;
+//     max-width: 800px; /* Maximum width */
+//     margin: 0 auto; /* Center it */
+//   }
+  
+//   //<div class="container">
+//   <img src="notebook.jpg" alt="Notebook" style="width:100%;">
+//   <div class="content">
+//     <h1>Heading</h1>
+//     <p>Lorem ipsum..</p>
+//   </div>
+// </div>
+
+//   .container .content {
+//     position: absolute; /* Position the background text */
+//     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+//     background: rgb(0, 0, 0); /* Fallback color */
+//     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+//     color: #f1f1f1; /* Grey text */
+//     width: 100%; /* Full width */
+//     padding: 20px; /* Some padding */

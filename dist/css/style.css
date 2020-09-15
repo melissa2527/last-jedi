@@ -18,8 +18,8 @@ nav {
   justify-content: center;
   align-items: center;
   background-image: url("/img/welcome.jpg");
-  width: 100%;
-  height: 50vh; }
+  background: cover;
+  background: center; }
   .header h1 {
     font-size: 400%;
     padding-bottom: 5px;
@@ -64,12 +64,73 @@ nav {
   .plotcontentwords p {
     line-height: 130%; }
 
-.characters >
+.characters > .characterpics {
+  width: 800px;
+  margin: 0 auto; }
+
 .characters img {
-  border-radius: 50%; }
+  border-radius: 50%;
+  width: 70px; }
 
 .characters {
+  flex-direction: column;
+  background-image: url("/img/rey-standing.jpg");
+  background: cover; }
+
+.charactertitle {
+  text-align: center;
+  padding: 40px; }
+
+.characterpics img .luke, .characterpics .bb8 {
+  flex-shrink: 3; }
+
+.characterpics img .leia, .characterpics .poe {
+  flex-grow: 2; }
+
+.characterpics img .finn, .characterpics .kylo {
+  flex-grow: 1; }
+
+.characterpics img .rey {
+  flex-grow: 0; }
+
+.cast {
+  background-color: lightgray; }
+  .cast h2 {
+    padding: 50px;
+    text-align: center;
+    font-size: 150%; }
+
+.cast > .markhamill, .actors {
+  width: 800px;
+  margin: 0 auto; }
+
+.markhamill {
   display: flex;
-  background-image: url("/img/rey-standing.jpg"); }
+  flex-direction: row; }
+
+.markhamillpic {
+  height: 65%;
+  width: 65%; }
+
+.markhamillinfo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px; }
+  .markhamillinfo h4 {
+    font-size: 130%;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .markhamillinfo p {
+    line-height: 1.3;
+    font-size: 130%;
+    padding-bottom: 50px; }
+
+.actors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .actors img {
+    height: 90%;
+    width: 90%; }
 
 /*# sourceMappingURL=style.css.map */
