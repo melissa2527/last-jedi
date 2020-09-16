@@ -88,12 +88,10 @@ nav {
     width: 800px;
     margin: 0 auto;
 }
-.characters img {
-    border-radius: 50%;
-    width: 70px;
-}
+
 .characters {
     flex-direction: column;
+    justify-content: space-between;
     background: 
         transparent 
         url('/img/rey-standing.jpg')
@@ -102,28 +100,37 @@ nav {
         no-repeat
         scroll;
     height: 100vh;
-    display: flex;
+    overflow: hidden;
 
+}
+.characters img {
+    border-radius: 50%;
 }
 .charactertitle {
     text-align: center;
     padding: 40px;
 }
-.characterpics {
-
-    img .luke, .bb8 {
-        flex-grow: 0;
-    }
-    img .leia, .poe {
-        flex-grow: 1;
-    }
-    img .finn, .kylo {
-        flex-grow: 2;
-    }
-    img .rey {
-        flex-grow: 3;
-    }
-}
+// .luke, .bb8 {
+//     flex: 0 0 auto;
+// }
+// .leia, .poe {
+//     flex: 1 0 auto;
+// }
+// .characterpics {
+   
+//     img .luke, .bb8 {
+//         flex-grow: 0;
+//     }
+//     img .leia, .poe {
+//         flex-grow: 1;
+//     }
+//     img .finn, .kylo {
+//         flex-grow: 2;
+//     }
+//     img .rey {
+//         flex-grow: 3;
+//     }
+// }
 
 
 .cast {
@@ -175,44 +182,13 @@ nav {
     img {
         height: 90%;
         width: 90%;
+        position: relative;
     }
 }
-// .box {
-//     position: relative;
-//     display: inline-block;
-//     }
-//     .text {
-//         position: absolute;
-//         background-color: black;
-//         opacity: 0.5;
-//         color: white;
-//         margin:0 auto;
-//         left: 0;
-//         right: 0;
-//         bottom: 0;
-//         text-align: center;
-//     }
-// }
-
-// //.container {
-//     position: relative;
-//     max-width: 800px; /* Maximum width */
-//     margin: 0 auto; /* Center it */
-//   }
-  
-//   //<div class="container">
-//   <img src="notebook.jpg" alt="Notebook" style="width:100%;">
-//   <div class="content">
-//     <h1>Heading</h1>
-//     <p>Lorem ipsum..</p>
-//   </div>
-// </div>
-
-//   .container .content {
-//     position: absolute; /* Position the background text */
-//     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-//     background: rgb(0, 0, 0); /* Fallback color */
-//     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-//     color: #f1f1f1; /* Grey text */
-//     width: 100%; /* Full width */
-//     padding: 20px; /* Some padding */
+.text {
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
