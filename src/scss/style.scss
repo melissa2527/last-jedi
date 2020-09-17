@@ -90,8 +90,8 @@ nav {
 }
 
 .characters {
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
     background: 
         transparent 
         url('/img/rey-standing.jpg')
@@ -100,8 +100,11 @@ nav {
         no-repeat
         scroll;
     height: 100vh;
-    overflow: hidden;
 
+}
+.characterpics {
+    flex-direction: row;
+    justify-content: 
 }
 .characters img {
     border-radius: 50%;
@@ -110,27 +113,16 @@ nav {
     text-align: center;
     padding: 40px;
 }
-// .luke, .bb8 {
-//     flex: 0 0 auto;
-// }
-// .leia, .poe {
-//     flex: 1 0 auto;
-// }
-// .characterpics {
-   
-//     img .luke, .bb8 {
-//         flex-grow: 0;
-//     }
-//     img .leia, .poe {
-//         flex-grow: 1;
-//     }
-//     img .finn, .kylo {
-//         flex-grow: 2;
-//     }
-//     img .rey {
-//         flex-grow: 3;
-//     }
-// }
+img .leia, .poe {
+    flex-grow: 1;
+}
+img .finn, .kylo {
+        flex-grow: 2;
+}
+    img .rey {
+        flex-grow: 3;
+}
+
 
 
 .cast {
@@ -189,6 +181,17 @@ nav {
     background-color: black;
     opacity: 0.8;
     position: absolute;
+    color: white;
     bottom: 0;
     z-index: 1;
+}
+
+.gallery {
+    background: url('/img/gallery.jpg')
+    transparent 
+    center /
+    cover
+    no-repeat
+    scroll
+    width: 100%vw;
 }
